@@ -1,0 +1,91 @@
+.button-style1
+{
+	border: solid 1px #d8d8d8;
+}
+
+.button-style2
+{
+}
+
+.button-style3
+{
+	border: solid 1px #333;
+}
+
+ul.style1
+{
+}
+
+	ul.style1 li
+	{
+		border-top: solid 1px #444;
+	}
+
+.widget
+{
+	background: #2B3138;
+}
+
+#sidebar
+{
+	color: #aaa;
+}
+
+#content
+{
+}
+
+	#content .inner
+	{
+		border-top: solid 1px transparent;
+	}
+
+#page-header nav a, #page-header nav span
+{
+	color: #bbb;
+}
+
+	#page-header nav a:hover, #page-header nav span:hover
+	{
+		color: #fff;
+	}
+
+#page-header nav .current_page_item
+{
+	background: #2B3138;
+}
+
+	#page-header nav .current_page_item a, #page-header nav .current_page_item span
+	{
+		color: #fff;
+	}
+
+#page-header nav .active
+{
+	background: #2B3138;
+}
+
+	#page-header nav .active, #page-header nav .active span
+	{
+		color: #fff;
+	}
+
+.dropotron
+{
+	background: #2B3138;
+	color: #aaa;
+}
+
+	.dropotron li
+	{
+	}
+
+		.dropotron li > a, .dropotron li > span
+		{
+			color: #aaa;
+		}
+		
+		.dropotron li:hover > a, .dropotron li:hover > span
+		{
+			color: #fff;
+		}

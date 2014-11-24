@@ -1,0 +1,492 @@
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body
+	{
+		min-width: 1200px;
+	}
+
+/*********************************************************************************/
+/* Post                                                                          */
+/*********************************************************************************/
+
+	.post
+	{
+		border-radius: 5px;
+		background: #fff;
+		box-shadow: inset 0px 0px 0px 1px #fff, inset 0px 0px 60px 0px #999, 0px 0px 3px 0px rgba(0,0,0,0.8);
+	}
+	
+		.post .image
+		{
+			width: 20em;
+		}
+	
+		.post header
+		{
+			margin: 0 0 3.5em 0;
+		}
+		
+			.post header h2
+			{
+				font-weight: 200;
+				font-size: 2.75em;
+				color: #424242;
+				line-height: 1.25em;
+				margin: 0.5em 0 0.5em 0;
+			}
+			
+				.post header h2 a
+				{
+					color: #424242;
+					text-decoration: none;
+				}
+			
+			.post header .byline
+			{
+				font-size: 1.5em;
+				font-weight: 200;
+				color: #a5a5a5;
+			}
+
+			.post header .date
+			{
+				position: relative;
+				background: url('images/ribbon.png') 0px 0px repeat-x;
+				margin: 0 0 1em 0;
+				height: 74px;
+				line-height: 74px;
+				top: -1.25em;
+			}
+			
+				.post header .date:before
+				{
+					width: 50px;
+					height: 74px;
+					background: url('images/ribbon.png') 0px -148px no-repeat;
+					content: '';
+					position: absolute;
+					top: 0;
+				}
+			
+				.post header .date:after
+				{
+					width: 50px;
+					height: 74px;
+					background: url('images/ribbon.png') -50px -148px no-repeat;
+					content: '';
+					position: absolute;
+					top: 0;
+				}
+				
+				.post header .date span
+				{
+					position: absolute;
+					top: 0px;
+					left: 10px;
+					display: inline-block;
+					height: 64px;
+					line-height: 70px;
+					background: url('images/ribbon.png') 0px -74px repeat-x;
+					padding: 0 1em 0 1em;
+					font-size: 1.3em;
+					font-weight: 400;
+					color: #fff;
+					overflow: hidden;
+					text-shadow: -1px -1px 0px rgba(0,0,0,0.3);
+				}
+
+		.post footer
+		{
+			clear: both;
+			margin: 0 0 1em 0;
+			padding-top: 2em;
+		}
+
+			.post footer a
+			{
+				color: #555;
+			}
+
+			.post footer a.button-style1
+			{
+				margin-right: 1.1em;
+			}
+
+/*********************************************************************************/
+/* Widget                                                                        */
+/*********************************************************************************/
+
+	.widget
+	{
+		border-radius: 5px;
+		background: rgba(0,0,0,0.35);
+		box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.25), 0px 1px 0px 0px rgba(255,255,255,0.15);
+	}
+
+		.widget header
+		{
+			background: url('images/bg3.png') center center repeat-x;
+			position: relative;
+			left: -1em;
+			top: -1em;
+			padding: 1.25em 1em 1.25em 1em;
+			margin: 0 -2em 0.75em 0;
+			border-radius: 5px;
+			box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.1), inset 0px 0px 0px 1px rgba(255,255,255,0.1), 0px 0px 0px 1px rgba(0,0,0,0.25);
+		}
+		
+			.widget header h2
+			{
+				color: #fff;
+				text-shadow: 0px -1px 0px rgba(0,0,0,0.75);
+			}
+			
+		.widget footer
+		{
+			margin: 0 0 0.75em 0;
+		}
+
+	.widget-about
+	{
+	}
+
+		.widget-about .image
+		{
+			width: 100%;
+			display: block;
+			margin: 0 0 1.5em 0;
+		}
+
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+	#header-wrapper
+	{
+		background: url('images/bg1.png');
+		box-shadow:	inset 0px -1px 0px 0px rgba(0,0,0,0.75),
+					inset 0px -2px 0px 0px rgba(255,255,255,0.25);
+	}
+
+	#main-wrapper
+	{
+		margin: 5% 0 6% 0;
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#page-header
+	{
+		position: relative;
+		height: 6em;
+		line-height: 6em;
+	}
+	
+		#page-header h1
+		{
+			position: absolute;
+			left: 2%;
+			top: 0;
+			font-size: 2em;
+			letter-spacing: -1px;
+			text-shadow: 0px -1px 0px rgba(0,0,0,0.75);
+		}
+		
+			#page-header h1 a
+			{
+				color: #fff;
+				text-decoration: none;
+			}
+			
+		#page-header nav
+		{
+			position: absolute;
+			right: 2%;
+			top: 0;
+			text-align: right;
+		}
+
+			#page-header nav li
+			{
+				display: inline;
+				padding: 0.5em 1.25em 0.6em 1.25em;
+				margin-left: 1.5em;
+			}
+
+			#page-header nav li > ul
+			{
+				display: none;
+			}
+		
+			#page-header nav a, #page-header nav span
+			{
+				color: rgba(255,255,255,0.8);
+				text-decoration: none;
+				font-size: 1.1em;
+			}
+
+				#page-header nav a:hover, #page-header nav span:hover
+				{
+					color: rgba(255,255,255,1.0);
+				}
+			
+			#page-header nav .current_page_item
+			{
+				background: rgba(38,43,48,0.85);
+				box-shadow: inset 0px 1px 0px rgba(0,0,0,0.15), 0px 1px 0px rgba(255,255,255,0.15);
+				border-radius: 5px;
+			}
+
+				#page-header nav .current_page_item a, #page-header nav .current_page_item span
+				{
+					color: rgba(255,255,255,1.0);
+				}
+
+			#page-header nav .active
+			{
+				background: rgba(38,43,48,0.85);
+				box-shadow: inset 0px 1px 0px rgba(0,0,0,0.15);
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+			}
+
+				#page-header nav .active, #page-header nav .active span
+				{
+					color: rgba(255,255,255,1.0);
+				}
+			
+			.dropotron
+			{
+				background: rgba(38,43,48,0.85);
+				border-radius: 5px;
+				padding: 1.25em 2em 1.25em 1.25em;
+				color: rgba(255,255,255,0.6);
+				text-shadow: 0px -1px 0px rgba(0,0,0,0.5);
+			}
+			
+				.dropotron-level-0
+				{
+					border-top-left-radius: 0 !important;
+				}
+
+				.dropotron li
+				{
+					line-height: 2.5em;
+				}
+
+					.dropotron li > a, .dropotron li > span
+					{
+						color: rgba(255,255,255,0.6);
+						text-decoration: none;
+					}
+					
+					.dropotron li:hover > a, .dropotron li:hover > span
+					{
+						color: rgba(255,255,255,1.0);
+					}
+
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+	#content
+	{
+		background: url('images/bg2.png');
+		position: relative;
+		width: 100%;
+		box-shadow:	inset 0px 0px 0px 1px rgba(0,0,0,0.75),
+					inset 0px 0px 0px 2px rgba(255,255,255,0.25);
+		line-height: 2em;
+	}
+
+		#content .inner
+		{
+			padding: 3% 0 3% 0;
+		}
+	
+		#content .inner > :last-child
+		{
+			margin-bottom: 0;
+		}
+	
+		#content article, #content section
+		{
+			margin: 0 0 3% 0;
+			padding: 5%;
+		}
+	
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+	#sidebar
+	{
+		background: url('images/bg2.png');
+		position: relative;
+		line-height: 1.5em;
+		color: rgba(255,255,255,0.6);
+		text-shadow: 0px -1px 0px rgba(0,0,0,0.5);
+	}
+	
+		#sidebar .inner
+		{
+			padding: 6% 0 6% 0;
+		}
+	
+		#sidebar .inner > :last-child
+		{
+			margin-bottom: 0;
+		}
+		
+		#sidebar article, #sidebar section
+		{
+			margin: 0 0 6% 0;
+			padding: 6%;
+		}
+	
+/*********************************************************************************/
+/* Layout Mods                                                                   */
+/*********************************************************************************/
+
+	.right-sidebar
+	{
+	}
+
+		.right-sidebar #content
+		{
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			padding-right: 3%;
+		}
+
+			.right-sidebar .post header .date
+			{
+				left: -3.5%;
+			}
+
+				.right-sidebar .post header .date:before
+				{
+					left: -50px;
+				}
+				
+				.right-sidebar .post header .date:after
+				{
+					right: -50px;
+				}
+				
+			.right-sidebar #content .inner
+			{
+				padding-left: 3%;
+			}
+
+		.right-sidebar #sidebar
+		{
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+			left: -3px;
+			margin-right: -3px;
+			z-index: 1;
+			box-shadow:	inset -1px 0px 0px 0px rgba(0,0,0,0.75), inset -1px 1px 0px 0px rgba(0,0,0,0.75), inset -1px -1px 0px 0px rgba(0,0,0,0.75),
+						inset -2px 0px 0px 0px rgba(255,255,255,0.25), inset -1px 2px 0px 0px rgba(255,255,255,0.25), inset -1px -2px 0px 0px rgba(255,255,255,0.25);
+		}
+
+			.right-sidebar #sidebar .inner
+			{
+				padding-right: 6%;
+			}
+
+	.left-sidebar
+	{
+	}
+
+		.left-sidebar #content
+		{
+			border-top-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			padding-left: 3%;
+			margin-left: -3%;
+		}
+
+			.left-sidebar .post header .date
+			{
+				right: -3.5%;
+			}
+
+				.left-sidebar .post header .date:before
+				{
+					right: -50px;
+					background-position: -50px -222px;
+				}
+				
+				.left-sidebar .post header .date:after
+				{
+					left: -50px;
+					background-position: 0px -222px;
+				}
+
+			.left-sidebar #content .inner
+			{
+				padding-right: 3%;
+			}
+
+		.left-sidebar #sidebar
+		{
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+			right: -3px;
+			margin-left: -3px;
+			z-index: 1;
+			box-shadow:	inset 1px 0px 0px 0px rgba(0,0,0,0.75), inset 1px 1px 0px 0px rgba(0,0,0,0.75), inset 1px -1px 0px 0px rgba(0,0,0,0.75),
+						inset 2px 0px 0px 0px rgba(255,255,255,0.25), inset 1px 2px 0px 0px rgba(255,255,255,0.25), inset 1px -2px 0px 0px rgba(255,255,255,0.25);
+		}
+
+			.left-sidebar #sidebar .inner
+			{
+				padding-left: 6%;
+			}
+
+	.no-sidebar
+	{
+	}
+
+		.no-sidebar #content
+		{
+			border-radius: 10px;
+		}
+
+			.no-sidebar .post header .date
+			{
+				left: -2.25em;
+			}
+
+				.no-sidebar .post header .date:before
+				{
+					left: -50px;
+				}
+				
+				.no-sidebar .post header .date:after
+				{
+					right: -50px;
+				}
+				
+			.no-sidebar #content .inner
+			{
+				padding: 2%;
+			}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+	{
+		text-align: center;
+		font-size: 0.9em;
+		color: rgba(255,255,255,0.35);
+	}
