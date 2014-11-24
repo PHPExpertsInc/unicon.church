@@ -21,7 +21,7 @@ if (!preg_match('/^[A-Za-z0-9_\-]+$/', $contentId)) {
     sendAjaxError('Invalid contentId: ' . $contentId);
 }
 
-$filename = "../content/$contentId.txt";
+$filename = "../content/$contentId.html";
 
 if (!file_exists($filename)) {
     if (!is_writable('../content')) {
