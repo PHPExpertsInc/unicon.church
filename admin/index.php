@@ -2,7 +2,7 @@
 
 define('PROJECT_ROOT', realpath(__DIR__ . '/../'));
 
-$customHeader = <<<HTML
+$customHeader = <<<'HTML'
     <!-- Froala integration -->
         <!-- Include Font Awesome. -->
         <link href="../froala/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -12,7 +12,7 @@ $customHeader = <<<HTML
     <!-- End Froala integration -->
 HTML;
 
-$customFooter = <<<HTML
+$customFooter = <<<'HTML'
 <!-- Include JS files. -->
     <script src="../froala/js/froala_editor.min.js"></script>
 
@@ -22,30 +22,7 @@ $customFooter = <<<HTML
     <![endif]-->
 
     <!-- Initialize the editor. -->
-    <script>
-        function setSaveParam(editor) {
-//            alert(editor.option('contentId'));
-            editor.option('saveParams', { contentId: editor.option('contentId') });
-        }
-
-        $(function() {
-            $('.editable').editable({
-                inlineMode: true,
-                saveURL: 'http://www.unicon.church/admin/save.php',
-                saveRequestType: 'POST',
-                //autosave: true,
-            });
-
-            $('.editable').on('editable.beforeSave', function (e, editor, data) {
-                setSaveParam(editor);
-            });
-
-            $('.editable').on('editable.blur', function (e, editor, data) {
-                setSaveParam(editor);
-                editor.save();
-            });
-        });
-    </script>
+    <script src="../js/editable.js"></script>
 HTML;
 
 include '../index.php';
