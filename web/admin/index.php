@@ -1,7 +1,5 @@
 <?php
 
-define('PROJECT_ROOT', realpath(__DIR__ . '/../'));
-
 $customHeader = <<<'HTML'
     <!-- Froala integration -->
         <!-- Include Font Awesome. -->

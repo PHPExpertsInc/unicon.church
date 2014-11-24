@@ -6,7 +6,7 @@ function setSaveParam(editor) {
 $(function() {
     $('.editable').editable({
         inlineMode: true,
-        saveURL: 'http://www.unicon.church/admin/save.php',
+        saveURL: '/admin/save.php',
         saveRequestType: 'POST',
         //autosave: true,
     });

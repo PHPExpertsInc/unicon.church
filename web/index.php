@@ -1,8 +1,7 @@
 <?php
 
-define('PROJECT_ROOT', __DIR__);
-
-include 'services/ContentGrabber.php';
+define('PROJECT_ROOT', realpath(__DIR__ . '/../'));
+include PROJECT_ROOT . '/services/ContentGrabber.php';
 
 $journalist = new ContentGrabber();
 ?>
@@ -148,16 +147,15 @@ $journalist = new ContentGrabber();
                         </article>
                     </div>
                 </div>
-
             </div>
-            <div class="4u">
 
+            <div class="4u">
                 <!-- Sidebar -->
                 <div id="sidebar">
                     <div class="inner">
 
                         <!-- About -->
-                        <section class="widget widget-about editable" data-save-id="main-about_us">
+                        <section class="widget widget-about editable" data-content-id="main-about_us">
                             <?php
                             if (($snippet = $journalist->fetchStory('main-about_us')) != false) {
                                 echo $snippet;
@@ -234,10 +232,8 @@ $journalist = new ContentGrabber();
                         <div id="copyright">
                             Copyright &copy; 2014 PHP Experts, Inc. All rights reserved.
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
